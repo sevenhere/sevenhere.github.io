@@ -1,0 +1,91 @@
+body{
+	background: #2A52B7;
+}
+body, div, a {
+    padding:0;
+    margin:0;
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.description{
+	overflow: hidden;
+	padding: 5px;
+	text-align:justify;
+	font-size: 20px;
+}
+
+#calculator {
+	background: radial-gradient(#ccc,#d9d9d9);
+	width: 400px;
+	height: 500px;
+	margin: 10px auto;
+	padding: 5px;
+	border-radius: 10px;
+	border: 3px solid black;
+}
+
+#total {
+    height: 70px;
+    width: 390px;
+    margin:auto;
+    background-color:white;
+    margin-bottom: 5px;
+    text-align: right;
+    font-size: 60px;
+    padding: 0 5px;
+    border-radius: 20px;
+}
+
+#numbers{
+	width: 310px;
+	float: left;
+}
+
+#operators a {
+	display: block;
+	width: 50px;
+	height: 50px;
+	float: left;
+	text-decoration: none;
+	text-align: center;
+	font-size: 32pt;
+	padding: 10px;
+	margin: 5px 15px;
+	background-color: #EDEDED;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+#numbers a {
+	cursor: pointer;
+	display: block;
+	width: 50px;
+	height: 50px;
+	float: left;
+	text-decoration: none;
+	text-align: center;
+	font-size: 32pt;
+	padding: 10px;
+	margin: 5px 15px;
+	background-color: #EDEDED;
+	border-radius: 10px;
+}
+
+#equals{
+	float: left;
+	width: 50px;
+	height: 300px;
+	font-size: 32pt;
+	padding: 10px;
+	margin: 5px;
+	cursor: pointer;
+	background-color: #EDEDED;
+	border-radius: 10px;
+}
+#equals a{
+	padding: 10px;
+	line-height: 280px;
+}
+#equals:hover,#numbers a:hover,#operators a:hover{
+	background-color: #e0b8b8;
+	color: white;
+}

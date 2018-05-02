@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="image/user.png" type="image/gif" sizes="12x12">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</head>
+<header>
+	<div class="topnav scroll" id="myTopnav"> 
+    <a href="#head" class="scroll"><i class="fa fa-home"></i>&nbsp;Home</a>
+    <a href="#about" class="scroll"><i class="fa fa-user"></i>&nbsp;About</a>
+    <a href="#project" class="scroll"><i class="fa fa-th"></i>&nbsp;Project</a>
+    <a href="#contact" class="scroll"><i class="fa fa-envelope"></i>&nbsp;Contact</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="navicon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+  </div>
+
+</header>
+
+<section id="head">
+	<div class="fixed-img">
+
+	<div class="head-info">
+
+	     <h1>Hi! I am Ng Wei Chun</h1>
+    </div>
+</div>
+</section>
+<body>
+<section id="about" class="container">
+	<br>
+	<h2>About Me</h2>
+	<br>
+	
+		<div class="about-icon">
+			<i class="fa fa-mortar-board"></i>
+		</div>
+		<div class="about-info">
+			<p>
+			I'm looking for job as a web developer or web designer. I'm currently learning to code using online resource such as FreeCodeCamp,Sololearn and udemy. I am also willing to learn new code and new computer langauge. Now I'm having fun learning the basics!
+		    </p>
+	    </div>
+		  <div class="about-icon">
+			<i class="fa fa-wrench"></i>
+		  </div>
+			<h3>What I use for Code</h3>
+			<br>
+			<div class="row about-info">
+				<div class="column-content">
+					HTML<br>
+					Jquery<br>
+					MySQL<br>
+				</div>
+				<div class="column-content">
+					Javascript<br>					
+					CSS<br>
+					PHP<br>
+				</div>
+			</div>
+</section>
+<section id="project" class="container project">
+	<br>
+<h2>Project</h2>
+<br>
+<div class="row myProject" id="myProject">
+	<div class="project-col">
+			<div class="text-center">
+			     <a href="calculator/calculator.html" target="_blank">
+				    <img class="p-image" src="image/picture.png" />
+			      <h4>Calculator</h4>
+			     </a>
+		    </div>
+	</div>
+	<div class="project-col">
+		<div class="text-center">
+			     <a href="Random-Quote/quote.html" target="_blank">
+				    <img class="p-image" src="image/picture2.png" />
+			     <h4>Random Quote</h4>
+			 </a>
+		    </div>
+	</div>
+	<div class="project-col">
+		<div class="text-center">
+			     <a href="weatherApp/weatherApp.html" target="_blank">
+				    <img class="p-image" src="image/picture3.png" />
+			     <h4>Weather App</h4>
+			     </a>
+		    </div>
+	</div>
+</div>
+</section>
+
+<footer id="contact">
+	<div class="btn-contact">
+	<button id="myBtn" class="hover"><span>Contact Me</span></button>
+	<div id="myModal" class="modal">
+		<!--Modal Content-->
+		<div class="modal-content">
+           <div class="modal-header">
+           	<h4>Contact Me</h4>
+                <div class="close">
+                	&times;
+                	</div> 
+            </div>
+            
+            <div class="modal-body">
+                <form name="cForm" action="mailto:vincent_ng96@hotmail.com" method="post" enctype="text/plain" onsubmit="return validateForm()">
+                       Name:<br>
+                       <input type="text" id="name" class="name" name="name" size="20"><br>
+                       E-mail:<br>
+                       <input type="text" id="email" class="email" name="email" size="20"><br>
+                       Comment:<br>
+                       <textarea placeholder="Type your Message Here....." type="text" name="comment" class="comment" tabindex="5" rows="4" cols="35"></textarea>
+                       <br><br>
+                       <input type="submit" class="btn-submit" value="Send">
+                       <input type="reset" class="btn-reset" value="Reset">
+
+                </form>
+            </div>
+        </div>
+	</div>
+</div>
+<br>
+<div class="f-row">
+	<div class="f-col">
+		Coded and designed by Ng Wei Chun
+	</div>
+	<div class="f-col">
+		<div id="icons">
+	
+		<a href="#">
+			<i class="fa fa-facebook-square"></i>
+		</a>
+		<a href="#">
+			<i class="fa fa-envelope"></i>
+		</a>
+		<a href="#">
+			<i class="fa fa-whatsapp"></i>
+		</a>
+	</div>
+	
+	   </div>
+   </div>
+	<script src="script2.js"></script>
+</footer>
+</body>
+</html>

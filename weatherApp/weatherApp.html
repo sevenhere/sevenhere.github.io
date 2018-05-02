@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather App</title>
+	<link rel="stylesheet" type="text/css" href="weatherstyle.css">
+	<script src="weatherscript.js"></script>
+</head>
+<body>
+	<div class="weather-app">
+		<div class="container">
+			  <div class="swap">
+			       <input type="button" name="cel" onClick="f2c()" value="&deg;C" />
+			       <input type="button" name="fah" onClick="c2f()" value="&deg;F" />
+		      </div>
+		      <br>
+			<h1>Weather App</h1>
+			<div class="temperature"><span id="temperature">0</span>&deg;<span id="change">F</span></div><br>
+			<div class="description"><span id="description">Unknown</span></div>
+			<div class="icon">
+	            <img id="icon" width="75px" src="imgs/codes/200.png" />
+	           </div>
+			<div class="place"><span id="place">Unknown</span>&nbsp;<span id="country">Unknown</span></div><br>
+			<div class="humidity"><span id="humidity">0</span>%</div><br>
+			<div class="wind"><span id="wind">0</span> mph </div><br>
+		</div>
+	</div>
+
+</body>
+</html>

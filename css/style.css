@@ -1,0 +1,475 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.topnav{
+  background-color: #cccccc;
+  position: fixed;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  z-index: 1;
+  font-weight: bold;
+  animation-name: slideInDown;
+  -webkit-animation-name: slideInDown;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+}
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 59px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: darkgrey;
+  color: white;
+  transition: all 0.5s ease-in;
+}
+
+.topnav .navicon {
+  display: none;
+}
+
+.fixed-img{
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.1)), url(../image/laptop.jpg);
+	height: 740px;
+  width: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.head-info{
+  font-family: 'Comfortaa', cursive;
+  float: right;
+  margin: 30vh 5vh;
+  padding: 15vh;
+  font-size: 50px;
+  color:white;
+  animation-name: zoomIn;
+  -webkit-animation-name: zoomIn;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+}
+@keyframes zoomIn{
+  from {
+    opacity: 0;
+    transform: scale3d(0.3,0.3,0.3);
+  }
+  50%{
+    opacity: 1;
+  }
+}
+@-webkit-keyframes zoomIn{
+  from {
+    opacity: 0;
+    transform: scale3d(0.3,0.3,0.3);
+  }
+  50%{
+    opacity: 1;
+  }
+}
+.container{
+	height: 100%;
+  width: 100%;
+  padding-top: 50px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.column-content{
+  padding: 20px;
+  text-align: center;
+  width: 50%;
+}
+h2{
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+}
+h3{
+  font-size: 45px;
+  text-align: center;
+}
+
+/* Icon animation */
+.about-icon {
+  color: #ff4d4d;
+  text-shadow: 2px 2px 4px grey;
+  font-size: 120px;
+  text-align: center;
+  -webkit-animation-name:bounce;
+  -webkit-animation-duration:5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: bounce;
+  animation-duration:5s;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes bounce {
+     0%, 100% {
+    -webkit-transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-20px);
+  }
+}
+@keyframes bounce{
+   0%, 100% {
+    -webkit-transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-20px);
+  }
+}
+/* End Icon Animation */
+
+.about-info{
+  font-size: 30px;
+  text-align: center;
+  line-height: 40px;
+  margin: auto;
+}
+
+/* Project */
+.project{
+  margin-bottom: 250px;
+  margin-top: 30px;
+}
+.myProject{
+  visibility: hidden;
+}
+.p-image{
+  width: 100%;
+  height: 200px;
+  border:5px solid grey;
+  display: block;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: transform .2s;
+}
+.p-image:hover{
+  -ms-transform:scale(1.2);
+  -webkit-transform:scale(1.2);
+  transform: scale(1.2);
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.project-col{
+  margin-top: 20px;
+  padding: 15px;
+  width: 33%;
+  float: left;
+}
+.project-col h4{
+  color: black;
+}
+
+.slideUp{
+  animation-name: slideUp;
+  -webkit-animation-name: slideUp;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slideUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+/* End Project Part*/
+
+.btn-contact{
+  text-align: center;
+}
+
+/* Hover */
+.hover{
+  border-radius: 4px;
+  background-color: #00004d;
+  border:3px solid grey;
+  color:white;
+  font-size: 30px;
+  padding: 10px;
+  width: 45%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.hover:hover{
+  box-shadow: 0 0 20px #0066ff;
+}
+.hover span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.hover span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top:0;
+    right: -20px;
+    transition: 0.5s;
+}
+.hover:hover span{
+    padding-right: 25px;
+}
+.hover:hover span:after{
+    opacity: 1;
+    right:0;
+}
+/*End Hover*/
+/*The Modal*/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+    text-align: left;
+}
+
+/* Modal Content */
+.modal-content {
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 35%;
+    height: 80%;
+    background-color: white;
+    -webkit-animation-name: jackInTheBox;
+    -webkit-animation-duration: 0.4s;
+    animation-name: jackInTheBox;
+    animation-duration: 0.4s; 
+    overflow: hidden;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/* Add Animation */
+@-webkit-keyframes jackInTheBox {
+   from {
+    opacity: 0;
+    transform: scale(0.1) rotate(30deg);
+    transform-origin: center bottom;
+  }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    transform: rotate(3deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes jackInTheBox {
+    from {
+    opacity: 0;
+    transform: scale(0.1) rotate(30deg);
+    transform-origin: center bottom;
+  }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    transform: rotate(3deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@media only screen and (max-width : 850px) {
+  .modal-content{
+    width: 100%;
+    height: 80%;
+  }
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* END close button */
+.modal-header {
+    padding-bottom: 20px;
+    border-bottom: dotted;
+    width: 100%;
+}
+
+.modal-body {
+  padding: 2px 16px;
+  width: 100%;
+}
+.name, .email, .comment{
+  border-radius: 3px;
+  width: 100%; 
+}
+.name:focus, .email:focus, .comment:focus{
+  box-shadow: 0 0 10px #0066ff;
+}
+.btn-submit{
+  background-color: #007bff;
+  width: 100px;
+  border:none;
+  cursor: pointer;
+  border-radius: 12px;
+  color: white
+}
+.btn-reset{
+  background-color: #868e96;
+  width: 80px;
+  border:none;
+  border-radius: 12px;
+  cursor: pointer;
+  color: white;
+}
+.btn-submit:hover, .btn-reset:hover{
+  box-shadow: 0 0 10px #0066ff;
+}
+
+/*End Modal*/
+footer{
+  background-color: #cccccc;
+  font-family: "Comfortaa", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+}
+.f-row{
+  width: 100%;
+  font-family: 'Comfortaa', cursive;
+  overflow: auto;
+  padding-bottom: 25px;
+}
+.f-col{
+  width: 50%;
+  float: left;
+  background-color: #cccccc;
+  font-size: 25px;
+}
+#icons
+{
+  display: flex;
+  float: right;
+}
+
+#icons a{
+  background-color: #cccccc;
+  color: black;
+  transition:.5s;
+  margin-left: 35px;
+  margin-right: 30px;
+}
+
+#icons a:hover
+{
+  color: #0066ff;
+  text-shadow: 0 0 5px #0066ff;
+}
+
+@media only screen and (max-width : 840px) {
+    .column, .f-col, .project-col {
+        width: 100%;
+        text-align: center;
+    }
+}
+@media only screen and (max-width : 900px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.navicon {
+    float: right;
+    display: block;
+    width: auto;
+  }
+}
+@media only screen and (max-width : 800px) {
+  .topnav.responsfloat: right;iv{position: relative;}
+  .topnav.responsive .navicon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .head-info{
+    background-color: grey;
+    border-radius: 20px;
+    color: white;
+  }
+}
