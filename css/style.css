@@ -3,7 +3,7 @@ body{
   padding: 0;
 }
 .topnav{
-  background-color: #cccccc;
+  background-color: #669999;
   position: fixed;
   width: 100%;
   font-family: "Raleway", sans-serif;
@@ -44,7 +44,7 @@ body{
   font-size: 17px;
 }
 .topnav a:hover {
-  background-color: darkgrey;
+  background-color: #527a7a;
   color: white;
   transition: all 0.5s ease-in;
 }
@@ -152,7 +152,7 @@ h3{
 
 /* Project */
 .project{
-  margin-bottom: 250px;
+  margin-bottom: 100px;
   margin-top: 30px;
 }
 .myProject{
@@ -161,7 +161,7 @@ h3{
 .p-image{
   width: 100%;
   height: 200px;
-  border:5px solid grey;
+  border:5px solid #669999;
   display: block;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -223,7 +223,7 @@ h3{
 .hover{
   border-radius: 4px;
   background-color: #00004d;
-  border:3px solid grey;
+  border:3px solid #334d4d;
   color:white;
   font-size: 30px;
   padding: 10px;
@@ -233,7 +233,7 @@ h3{
   margin: 5px;
 }
 .hover:hover{
-  box-shadow: 0 0 20px #0066ff;
+  box-shadow: 0 0 40px #ffd699;
 }
 .hover span{
     cursor: pointer;
@@ -346,8 +346,9 @@ h3{
 
 @media only screen and (max-width : 850px) {
   .modal-content{
+    overflow: auto;
     width: 100%;
-    height: 90%;
+    height: 80%;
   }
 }
 
@@ -399,13 +400,13 @@ h3{
   cursor: pointer;
   color: white;
 }
-.btn-submit:hover, .btn-reset:hover{
+.btn-submit:hover , .btn-reset:hover{
   box-shadow: 0 0 10px #0066ff;
 }
 
 /*End Modal*/
 footer{
-  background-color: #cccccc;
+  background-color: #669999;
   font-family: "Comfortaa", Helvetica, Arial, sans-serif;
   font-size: 20px;
 }
@@ -416,9 +417,10 @@ footer{
   padding-bottom: 25px;
 }
 .f-col{
+  color: white;
   width: 50%;
   float: left;
-  background-color: #cccccc;
+  background-color: #669999;
   font-size: 25px;
 }
 #icons
@@ -428,7 +430,7 @@ footer{
 }
 
 #icons a{
-  background-color: #cccccc;
+  background-color: #669999;
   color: black;
   transition:.5s;
   margin-left: 35px;
@@ -468,7 +470,7 @@ footer{
     text-align: left;
   }
   .head-info{
-    background-color: grey;
+    background-color: rgba(0,0,0,0.5);
     border-radius: 20px;
     color: white;
   }

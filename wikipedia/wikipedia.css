@@ -1,0 +1,39 @@
+body{
+	background-image: url(wallpaper.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+h1{
+	font-family: Ribeye Marrow, Times New Roman;
+	font-size: 4em;
+	margin-top: 30px;
+}
+.article{
+	color: white;
+}
+button{
+	margin: 1%;
+}
+#output{
+	margin-top:1%;
+	border-radius: 25px;
+	font-family: Do Hyeon;
+}
+div{
+	border-radius: 25px;
+}
+a { 
+	color: inherit; 
+} 
+p{
+  padding: 1%;
+  font-size:25px;
+}
+h2{
+	color: black;
+	padding:1%;
+}
+.result{
+	background-color: rgba(250,250,250,.75);
+}

@@ -42,5 +42,5 @@ function myScrollFunction(){
   if(document.body.scrollTop > 1390 || document.documentElement.scrollTop > 1390){
     y.className += " " + "slideUp"; 
   }
-}
+};
 
