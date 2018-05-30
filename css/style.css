@@ -3,7 +3,7 @@ body{
   padding: 0;
 }
 .topnav{
-  background-color: #669999;
+  background-color: #999999;
   position: fixed;
   width: 100%;
   font-family: "Raleway", sans-serif;
@@ -44,7 +44,7 @@ body{
   font-size: 17px;
 }
 .topnav a:hover {
-  background-color: #527a7a;
+  background-color: #666666;
   color: white;
   transition: all 0.5s ease-in;
 }
@@ -161,7 +161,7 @@ h3{
 .p-image{
   width: 100%;
   height: 200px;
-  border:5px solid #669999;
+  border:5px solid #999999;
   display: block;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -406,7 +406,7 @@ h3{
 
 /*End Modal*/
 footer{
-  background-color: #669999;
+  background-color: #999999;
   font-family: "Comfortaa", Helvetica, Arial, sans-serif;
   font-size: 20px;
 }
@@ -420,7 +420,7 @@ footer{
   color: white;
   width: 50%;
   float: left;
-  background-color: #669999;
+  background-color: #999999;
   font-size: 25px;
 }
 #icons
@@ -430,7 +430,7 @@ footer{
 }
 
 #icons a{
-  background-color: #669999;
+  background-color: #999999;
   color: black;
   transition:.5s;
   margin-left: 35px;

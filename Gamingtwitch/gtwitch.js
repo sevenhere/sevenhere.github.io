@@ -1,10 +1,3 @@
-//https://api.twitch.tv/kraken/channels/shroud?client_id=atr59jk7lhqqg2cdc3lq8wsntkdj5q
-//https://api.twitch.tv/kraken/channels/just9n?client_id=atr59jk7lhqqg2cdc3lq8wsntkdj5q
-//https://api.twitch.tv/kraken/channels/chad?client_id=atr59jk7lhqqg2cdc3lq8wsntkdj5q
-//https://api.twitch.tv/kraken/channels/chocoTaco?client_id=atr59jk7lhqqg2cdc3lq8wsntkdj5q
-//shroud following
-//https://api.twitch.tv/kraken/users/shroud/follows/channels/?client_id=atr59jk7lhqqg2cdc3lq8wsntkdj5q
-
 $(function(){
     $(".slideShow img:gt(0)").hide();
     setInterval(function(){
