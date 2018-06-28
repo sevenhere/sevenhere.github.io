@@ -177,7 +177,7 @@ h3{
 .project-col{
   margin-top: 20px;
   padding: 15px;
-  width: 33%;
+  width: 32%;
   float: left;
 }
 .project-col h4{
@@ -474,4 +474,13 @@ footer{
     border-radius: 20px;
     color: white;
   }
+}
+hr{
+  background-color: black;
+  height: 2px;
+  width: 20%;
+}
+.shadow{
+  margin: 2px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
